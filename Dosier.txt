@@ -1,0 +1,11 @@
+Cambios realizados en el Examen 3ª evaluacion Entornos de Desarrollo
+
+1. Encapsulo los campos publicos convirtiéndolose en privados
+2. Doy formato camelCase y PascalCase en cada caso
+3. Extraigo los setters y getters
+4. Elimino los setters para evitar que sean manipulados
+5. Cambio los nombres poco descriptivos por otros más adecuados
+6. Borro el "if" del constructor puesto que sería redundante al existir como método fuera.
+7. Añado llaves a los bucles if, formateo los saltos de línea, ...
+8. Documento el código
+
