@@ -116,22 +116,24 @@ namespace Examen3EV_NS
         /// <para>Calcula la notaMedia y el número de suspensos/aprobados/notables/sobresalientes</para>
         /// </summary>
         /// <param name="arrayNotas">The arrayNotas<see cref="List{int}"/>Listado de notas</param>
-        /// <exception cref="System.ArgumentException">La lista no puede estar vacía.</exception>
+        /// <exception cref="System.ArgumentOutOfRangeException">La lista no puede estar vacía.</exception>
         /// <returns>The <see cref="double"/>Devuelve la nota media</returns>
         public double CalcularEstadistica(List<int> arrayNotas)
         {
             // TODO: hay que modificar el tratamiento de errores para generar excepciones
             //
+
+
             if (arrayNotas.Count <= 0)  // Si la lista no contiene elementos, devolvemos un error
             {
-                throw new ArgumentException(this.errorListaVacia);
+                throw new ArgumentOutOfRangeException(this.errorListaVacia);
             }
 
             for (int i = 0; i < 10; i++)
             {
                 if (arrayNotas[i] < 0 || arrayNotas[i] > 10)  // comprobamos que las notas están entre 0 y 10 (mínimo y máximo), si no, error
                 {
-                    throw new ArgumentException(this.errorNotasIncorrectas);
+                    throw new ArgumentOutOfRangeException(this.errorNotasIncorrectas);
                 }
             }
 
