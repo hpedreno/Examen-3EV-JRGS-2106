@@ -116,7 +116,7 @@ namespace Examen3EV_NS
         /// <para>Calcula la notaMedia y el número de suspensos/aprobados/notables/sobresalientes</para>
         /// </summary>
         /// <param name="arrayNotas">The arrayNotas<see cref="List{int}"/>Listado de notas</param>
-        /// <exception cref="System.ArgumentOutOfRangeException">La lista no puede estar vacía.</exception>
+        /// <exception cref="System.ArgumentException">La lista no puede estar vacía.</exception>
         /// <returns>The <see cref="double"/>Devuelve la nota media</returns>
         public double CalcularEstadistica(List<int> arrayNotas)
         {

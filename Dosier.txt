@@ -1,6 +1,6 @@
 Cambios realizados en el Examen 3ª evaluacion Entornos de Desarrollo
 
-1. Encapsulo los campos publicos convirtiéndolose en privados
+1. Encapsulo los campos publicos convirtiéndolos en privados
 2. Doy formato camelCase y PascalCase en cada caso
 3. Extraigo los setters y getters
 4. Elimino los setters para evitar que sean manipulados

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Examen3EV_NS;
+using System;
 
 namespace UnitTestProject1
 {
@@ -8,6 +9,7 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
+        //[ExpectedException(typeof(System.ArgumentException))]
         public void TestMethod1()
         {
             List<int> notas = new List<int>();
@@ -25,6 +27,16 @@ namespace UnitTestProject1
             int aprE = 1;
             int notE = 2;
             int sbrE = 1;
+
+            try
+            {
+                Examen3EV prueba1 = new Examen3EV(notas);
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e)
+            }
+
         }
     }
 }
