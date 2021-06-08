@@ -150,7 +150,7 @@ namespace Examen3EV_NS
                 {
                     this.notable++;         // Nota para un notable: entre 7 y 9
                 }
-                else if (arrayNotas[i] > 9)
+                else if (arrayNotas[i] >= 9) //Añado un = para que 9 también sea notable
                 {
                     this.sobresaliente++;   // Nota para sobresaliente: 9 o más
                 }
