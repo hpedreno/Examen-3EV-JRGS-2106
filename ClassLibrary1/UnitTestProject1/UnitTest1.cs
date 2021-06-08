@@ -30,7 +30,7 @@ namespace UnitTestProject1
                 int notE = 2;
                 int sbrE = 1;
                 EstablecerNota prueba1 = new EstablecerNota(notas);
-                Assert.AreEqual(mediaEsperada);
+                Assert.AreEqual(mediaEsperada, prueba1.GetNotaMedia());
             }
             catch (ArgumentOutOfRangeException e)
             {   
@@ -47,12 +47,13 @@ namespace UnitTestProject1
             {
                 List<int> notas = new List<int>();
 
-                double mediaEsperada = 0.0;
+                double mediaEsperada = 5.0;
                 int susE = 3;
                 int aprE = 1;
                 int notE = 2;
                 int sbrE = 1;
-                EstablecerNota prueba1 = new EstablecerNota(notas);
+                EstablecerNota prueba1 = new EstablecerNota();
+                Assert.AreEqual(mediaEsperada, prueba1.GetNotaMedia());
             }
             catch (ArgumentOutOfRangeException e)
             {
@@ -80,6 +81,7 @@ namespace UnitTestProject1
                 int notE = 2;
                 int sbrE = 1;
                 EstablecerNota prueba1 = new EstablecerNota(notas);
+                Assert.AreEqual(mediaEsperada, prueba1.GetNotaMedia());
             }
             catch (ArgumentOutOfRangeException e)
             {

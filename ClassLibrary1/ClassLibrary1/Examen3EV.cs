@@ -123,7 +123,6 @@ namespace Examen3EV_NS
             // TODO: hay que modificar el tratamiento de errores para generar excepciones
             //
 
-
             if (arrayNotas.Count <= 0)  // Si la lista no contiene elementos, devolvemos un error
             {
                 throw new ArgumentOutOfRangeException(this.errorListaVacia);
